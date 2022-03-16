@@ -2,20 +2,20 @@
 This repository contains the files needed to successfully boot macOS on Lenovo Thinkpad L390 Yoga with Opencore.
 
 <p align="center"><img src="./.github/l390yoga.png" alt="Thinkpad L390 Yoga" width="40%" align="Right"><a href="https://pcsupport.lenovo.com/us/it/products/laptops-and-netbooks/thinkpad-l-series-laptops/thinkpad-l390-yoga-type-20nt-20nu/downloads/ds505882"><img src="https://img.shields.io/badge/BIOS-1.36-blue"></a> &nbsp;&nbsp;<a href="https://github.com/acidanthera/OpenCorePkg"><img src="https://img.shields.io/badge/OpenCore-0.7.9-blue"></a> &nbsp;&nbsp;<img src="https://img.shields.io/badge/MacOS-12-blue"></p>
-The project is stable. Mac OS 12 works with Windows 11 in dual boot. There are probably things that can be improved, so feel free to open issues or even PRs with suggestions or observations.<br> <b>This is not a support forum</b>, I won't be able to give individual support. I suggest to use the <a href="https://dortania.github.io/OpenCore-Install-Guide/">Dortania's Opencore Install Guide</a> to build your EFI folder, then compare with this EFI for the last improvements.
+The project is unstable. Mac OS 12 works with Windows 11 in dual boot. There are probably things that can be improved, so feel free to open issues or even PRs with suggestions or observations.<br> <b>This is not a support forum</b>, I won't be able to give individual support. I suggest to use the <a href="https://dortania.github.io/OpenCore-Install-Guide/">Dortania's Opencore Install Guide</a> to build your EFI folder, then compare with this EFI for the last improvements.
 
 <h2>Configuration</h2>
 <div align="center">
 
 | Specifications      | Details                                          |
 | :--- | :--- |
-| Processor           | Intel Core i5-8265U @ 1.8 GHz          |
+| Processor           | Intel Core i7-8565U @ Base 1.8 GHz (Boost 4.60 GHz)         |
 | Memory              | 16 GB DDR4 2400 MHz                             |
-| Hard Disk           | Crucial P2 SSD PCIe NVMe 512 GB         |
+| Hard Disk           | 1TB Lexar NM620 M.2 PCIe 3.0 x4 NVMe 3D-NAND TL (LNM620X001T-RNNNG)  |
 | Integrated Graphics | Intel UHD Graphics 620 |
 | Screen              | 13.3 inch with Touchscreen @ 1920 x 1080         |
-| Sound Card          | Realtek ALC257 @ layout-id 96                             |
-| Wireless/BT Card       | BCM94350ZAE (Lenovo FRU 00JT494)           |
+| Sound Card          | Realtek ALC3287 @ layout-id ?*                                 |
+| Wireless/BT Card       | Intel Wireless-AC 9560 - M. 2 Card           |
 
 
 <img src="./.github/info.png"></div>
@@ -25,9 +25,10 @@ The project is stable. Mac OS 12 works with Windows 11 in dual boot. There are p
 
 <h2>Status</h2>
 <h3>What works</h3>
-Almost everything, including gestures, multitouch, touchscreen, bootchime (thanks @mikebeaton), external video output, EC keys, sleep, hibernation, Handoff, Airdrop, ...
-<h3>What doesn't work but might be fixed in the future</h3>
+<!--Almost everything, including gestures, multitouch, touchscreen, bootchime (thanks @mikebeaton), external video output, EC keys, sleep, hibernation, Handoff, Airdrop, ...-->
+boot in macOS 12, multitouch, touchscreen, external video output ... i am in progress
 
+<h3>What doesn't work but might be fixed in the future</h3>
 - Realtek Card Reader: it works with <a href="https://github.com/0xFireWolf/RealtekCardReader">this driver</a> by 0xFireWolf. However, I have noticed an increase in power consumption (about 0.5w on idle) with the card reader enabled and the kext, so I prefer to disable it;
 - Some features of YogaSMC kext: for info, follow <a href="https://github.com/zhen-zen/YogaSMC/issues/68#">this issue</a> and feel free to contribute;
 
@@ -88,6 +89,8 @@ Battery lasts about 3-4h with a full charge, with a 0.8-1.1W idle power consumpt
 - benbender and tylernguyen for their well-documented <a href="https://github.com/benbender/x1c6-hackintosh">thinkpad x1c6 hackintosh project</a>
 - <a href="https://github.com/5T33Z0/OC-Little-Translated">OC-Little-Translated</a>
 
+<!--
 <h2>Benchmark</h2>
 <p align="center"><img src="./.github/Benchmark.png"></p>
 Compare with <a href="https://browser.geekbench.com/v5/cpu/search?utf8=%E2%9C%93&q=MacBook+Pro+2019+i5+i5-8257U">these</a>.
+-->
