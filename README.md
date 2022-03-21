@@ -88,6 +88,8 @@ Battery lasts about 3-4h with a full charge, with a 0.8-1.1W idle power consumpt
 - sicreative for <a href="https://github.com/sicreative/VoltageShift">VoltageShift</a>
 - benbender and tylernguyen for their well-documented <a href="https://github.com/benbender/x1c6-hackintosh">thinkpad x1c6 hackintosh project</a>
 - <a href="https://github.com/5T33Z0/OC-Little-Translated">OC-Little-Translated</a>
+- <a href="https://github.com/OpenIntelWireless">OpenIntelWireless</a>
+- <a href="https://github.com/antoniomcr96">antoniomcr96</a>
 
 <!--
 <h2>Benchmark</h2>
