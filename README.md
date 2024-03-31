@@ -10,12 +10,12 @@ The project is stable. Mac OS 11 works with Windows 11 in dual boot. There are p
 
 | Specifications      | Details                                          |
 | :--- | :--- |
-| Processor           | Intel Core i5-8265U @ 1.8 GHz          |
+| Processor           | Intel Core i7-8565U @ Base 1.8 GHz (Boost 4.60 GHz)         |
 | Memory              | 16 GB DDR4 2400 MHz                             |
-| Hard Disk           | Crucial P2 SSD PCIe NVMe 512 GB         |
+| Hard Disk           | 1TB Lexar NM620 M.2 PCIe 3.0 x4 NVMe 3D-NAND TL (LNM620X001T-RNNNG)  | 
 | Integrated Graphics | Intel UHD Graphics 620 |
 | Screen              | 13.3 inch with Touchscreen @ 1920 x 1080         |
-| Sound Card          | Realtek ALC257 @ layout-id 96                             |
+| Sound Card          | Realtek ALC3287 @ layout-id ?*                                 |
 | Wireless/BT Card       | BCM94350ZAE (Lenovo FRU 00JT494)           |
 
 <img src="./.github/info.png"></div>
@@ -95,6 +95,8 @@ Almost everything, including gestures, multitouch, touchscreen, bootchime (thank
 - sicreative for <a href="https://github.com/sicreative/VoltageShift">VoltageShift</a>
 - benbender and tylernguyen for their well-documented <a href="https://github.com/benbender/x1c6-hackintosh">thinkpad x1c6 hackintosh project</a>
 - <a href="https://github.com/5T33Z0/OC-Little-Translated">OC-Little-Translated</a>
+- <a href="https://github.com/OpenIntelWireless">OpenIntelWireless</a>
+- <a href="https://github.com/antoniomcr96">antoniomcr96</a>
 
 <h2>Benchmark</h2>
 <p align="center"><img src="./.github/Benchmark.png"></p>
